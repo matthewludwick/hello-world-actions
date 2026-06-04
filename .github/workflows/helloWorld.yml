@@ -1,20 +1,13 @@
 name: Hello World
 
-# Events
-
 on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
-
   workflow_dispatch:
-
-
-# Workflow / Jobs
 
 jobs:
   hello:
@@ -22,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Hello
-        run: echo "Hello World!"
+        run: echo "Hello World"
         shell: bash
       - name: Hello Again
-        run: echo "Hello Again!"
+        run: echo "Hello Again"
         shell: bash
